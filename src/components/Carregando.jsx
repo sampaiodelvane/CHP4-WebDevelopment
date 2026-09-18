@@ -1,4 +1,4 @@
-import { Loader2 } from "lucide-react";
+import { LuLoaderCircle } from "react-icons/lu";
 
 
 
@@ -17,7 +17,7 @@ const Carregando = ({ texto = "Carregando...", esqueleto = false }) => {
 
   return (
     <p className="carregando" aria-busy="true">
-      <Loader2 size={18} className="girando" />
+      <LuLoaderCircle size={18} className="girando" />
       {texto}
     </p>
   );

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router";
-import { ListVideo } from "lucide-react";
+import { LuListVideo } from "react-icons/lu";
 
 import CampoBusca from "../components/CampoBusca.jsx";
 import Carregando from "../components/Carregando.jsx";
@@ -82,7 +82,7 @@ const Inicio = () => {
               <h2>Continuar assistindo</h2>
             </div>
             <Link to="/minha-lista" className="botao botao--secundario">
-              <ListVideo size={16} />
+              <LuListVideo size={16} />
               Abrir minha lista
             </Link>
           </section>

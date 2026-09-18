@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import { SearchX, Search } from "lucide-react";
+import { LuSearchX, LuSearch } from "react-icons/lu";
 
 import CampoBusca from "../components/CampoBusca.jsx";
 import Carregando from "../components/Carregando.jsx";
@@ -64,7 +64,7 @@ const Busca = () => {
 
         {!carregando && !erro && termoBuscado && resultados.length === 0 && (
           <EstadoVazio
-            icone={SearchX}
+            icone={LuSearchX}
             titulo="Nenhuma série encontrada"
             descricao="Revise a grafia ou tente buscar pelo título original em inglês."
           />
@@ -72,7 +72,7 @@ const Busca = () => {
 
         {!carregando && !erro && !termoBuscado && (
           <EstadoVazio
-            icone={Search}
+            icone={LuSearch}
             titulo="O que você quer assistir?"
             descricao="Digite o nome de uma série no campo acima para começar."
           />

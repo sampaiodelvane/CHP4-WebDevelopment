@@ -1,4 +1,4 @@
-import { CalendarDays, Check, Clock, Plus } from "lucide-react";
+import { LuCalendarDays, LuCheck, LuClock, LuPlus } from "react-icons/lu";
 
 import { formatarData, formatarDuracao } from "../dados/formatacao.js";
 
@@ -18,10 +18,10 @@ const ItemEpisodio = ({ episodio, assistido, aoAlternar }) => {
 
         <div className="episodio__meta">
           <span>
-            <CalendarDays size={13} /> {formatarData(episodio.air_date)}
+            <LuCalendarDays size={13} /> {formatarData(episodio.air_date)}
           </span>
           <span>
-            <Clock size={13} /> {formatarDuracao(episodio.runtime)}
+            <LuClock size={13} /> {formatarDuracao(episodio.runtime)}
           </span>
         </div>
       </div>
@@ -36,7 +36,7 @@ const ItemEpisodio = ({ episodio, assistido, aoAlternar }) => {
         onClick={() => aoAlternar(episodio)}
         aria-pressed={assistido}
       >
-        {assistido ? <Check size={15} /> : <Plus size={15} />}
+        {assistido ? <LuCheck size={15} /> : <LuPlus size={15} />}
         {assistido ? "Assistido" : "Marcar"}
       </button>
     </li>

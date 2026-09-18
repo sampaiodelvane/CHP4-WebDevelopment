@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router";
-import { CheckCheck, RotateCcw } from "lucide-react";
+import { LuCheckCheck, LuRotateCcw } from "react-icons/lu";
 
 import BarraProgresso from "../components/BarraProgresso.jsx";
 import Carregando from "../components/Carregando.jsx";
@@ -86,7 +86,7 @@ const Temporada = () => {
           onClick={() => aoMarcarTemporada(episodios, true)}
           disabled={temporadaCompleta}
         >
-          <CheckCheck size={16} />
+          <LuCheckCheck size={16} />
           Marcar temporada inteira
         </button>
 
@@ -96,7 +96,7 @@ const Temporada = () => {
           onClick={() => aoMarcarTemporada(episodios, false)}
           disabled={marcados === 0}
         >
-          <RotateCcw size={16} />
+          <LuRotateCcw size={16} />
           Desmarcar temporada
         </button>
       </div>

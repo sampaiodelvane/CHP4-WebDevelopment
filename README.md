@@ -38,6 +38,8 @@ proximo-tv-time/
 ├─ vercel.json
 └─ vite.config.js
 
+Renderização de ícones: Usado lucide-react
+
 🤖 Uso de IA e Metodologia
 O projeto adotou o modelo Spec Driven Development. Toda a especificação em docs/requirements.md foi escrita e revisada antes de escrevermos código, sendo ela quem dita as regras e o escopo do projeto.
 

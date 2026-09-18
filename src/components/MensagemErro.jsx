@@ -1,9 +1,9 @@
-import { AlertTriangle } from "lucide-react";
+import { LuTriangleAlert } from "react-icons/lu";
 
 const MensagemErro = ({ mensagem, aoTentarNovamente }) => {
   return (
     <div className="aviso aviso--erro" role="alert">
-      <AlertTriangle size={20} />
+      <LuTriangleAlert size={20} />
       <div>
         <p>{mensagem}</p>
         {aoTentarNovamente && (

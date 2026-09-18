@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router";
-import { Compass, ListVideo, Trash2 } from "lucide-react";
+import { LuCompass, LuListVideo, LuTrash2 } from "react-icons/lu";
 
 import CardSerie from "../components/CardSerie.jsx";
 import EstadoVazio from "../components/EstadoVazio.jsx";
@@ -63,12 +63,12 @@ const MinhaLista = () => {
           </div>
 
           <EstadoVazio
-            icone={ListVideo}
+            icone={LuListVideo}
             titulo="Sua lista ainda está vazia"
             descricao="Acompanhe uma série ou marque um episódio para ela aparecer aqui."
           >
             <Link to="/" className="botao">
-              <Compass size={16} />
+              <LuCompass size={16} />
               Descobrir séries
             </Link>
           </EstadoVazio>
@@ -116,7 +116,7 @@ const MinhaLista = () => {
                 className="botao botao--perigo botao--pequeno"
                 onClick={() => aoRemover(item.serie.id)}
               >
-                <Trash2 size={14} />
+                <LuTrash2 size={14} />
                 Remover
               </button>
             </div>

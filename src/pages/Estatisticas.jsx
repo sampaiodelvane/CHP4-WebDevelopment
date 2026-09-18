@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router";
-import { BarChart3, Clock, Compass, Layers, Tv } from "lucide-react";
+import { LuChartColumn, LuClock, LuCompass, LuLayers, LuTv } from "react-icons/lu";
 
 import CartaoEstatistica from "../components/CartaoEstatistica.jsx";
 import EstadoVazio from "../components/EstadoVazio.jsx";
@@ -86,12 +86,12 @@ const Estatisticas = () => {
           </div>
 
           <EstadoVazio
-            icone={BarChart3}
+            icone={LuChartColumn}
             titulo="Ainda não há o que contar"
             descricao="Marque alguns episódios como assistidos e os seus números aparecem aqui."
           >
             <Link to="/" className="botao">
-              <Compass size={16} />
+              <LuCompass size={16} />
               Descobrir séries
             </Link>
           </EstadoVazio>
@@ -113,22 +113,22 @@ const Estatisticas = () => {
 
         <div className="cartoes">
           <CartaoEstatistica
-            icone={Layers}
+            icone={LuLayers}
             valor={resumo.totalEpisodios}
             rotulo="Episódios assistidos"
           />
           <CartaoEstatistica
-            icone={Clock}
+            icone={LuClock}
             valor={formatarDuracao(resumo.minutos)}
             rotulo="Tempo total de tela"
           />
           <CartaoEstatistica
-            icone={Tv}
+            icone={LuTv}
             valor={resumo.totalSeries}
             rotulo="Séries acompanhadas"
           />
           <CartaoEstatistica
-            icone={BarChart3}
+            icone={LuChartColumn}
             valor={resumo.concluidas}
             rotulo="Séries concluídas"
           />

@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { BarChart3, Clapperboard, Compass, ListVideo } from "lucide-react";
+import { LuChartColumn, LuClapperboard, LuCompass, LuListVideo } from "react-icons/lu";
 
 
 const Cabecalho = ({ quantidadeAcompanhando = 0 }) => {
@@ -7,18 +7,18 @@ const Cabecalho = ({ quantidadeAcompanhando = 0 }) => {
     <header className="cabecalho">
       <div className="cabecalho__interno">
         <Link to="/" className="marca">
-          <Clapperboard size={22} />
+          <LuClapperboard size={22} />
           Novo TV Time
         </Link>
 
         <nav className="navegacao">
           <Link to="/" className="navegacao__link">
-            <Compass size={17} />
+            <LuCompass size={17} />
             <span className="rotulo">Descobrir</span>
           </Link>
 
           <Link to="/minha-lista" className="navegacao__link">
-            <ListVideo size={17} />
+            <LuListVideo size={17} />
             <span className="rotulo">Minha lista</span>
             {quantidadeAcompanhando > 0 && (
               <span className="navegacao__contador">
@@ -28,7 +28,7 @@ const Cabecalho = ({ quantidadeAcompanhando = 0 }) => {
           </Link>
 
           <Link to="/estatisticas" className="navegacao__link">
-            <BarChart3 size={17} />
+            <LuChartColumn size={17} />
             <span className="rotulo">Estatísticas</span>
           </Link>
         </nav>

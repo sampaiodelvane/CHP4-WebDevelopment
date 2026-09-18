@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
-import { Search } from "lucide-react";
+import { LuSearch } from "react-icons/lu";
 
 
 
@@ -22,7 +22,7 @@ const CampoBusca = ({ valorInicial = "", placeholder = "Buscar séries..." }) =>
 
   return (
     <form className="campo-busca" onSubmit={aoEnviar} role="search">
-      <Search size={18} />
+      <LuSearch size={18} />
       <input
         type="search"
         value={termo}

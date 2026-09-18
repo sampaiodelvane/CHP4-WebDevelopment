@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { Link, Outlet, useParams } from "react-router";
-import { BookmarkCheck, BookmarkPlus, ImageOff, Star } from "lucide-react";
+import { LuBookmarkCheck, LuBookmarkPlus, LuImageOff, LuStar } from "react-icons/lu";
 
 import BarraProgresso from "../components/BarraProgresso.jsx";
 import Carregando from "../components/Carregando.jsx";
@@ -132,7 +132,7 @@ const LayoutSerie = () => {
             />
           ) : (
             <div className="serie-capa__poster serie-capa__poster--vazio">
-              <ImageOff size={26} />
+              <LuImageOff size={26} />
             </div>
           )}
 
@@ -142,7 +142,7 @@ const LayoutSerie = () => {
             <div className="etiquetas">
               <span className="etiqueta">{formatarAno(serie.first_air_date)}</span>
               <span className="etiqueta">
-                <Star size={12} /> {formatarNota(serie.vote_average)}
+                <LuStar size={12} /> {formatarNota(serie.vote_average)}
               </span>
               {serie.genres.slice(0, 3).map((genero) => (
                 <span className="etiqueta" key={genero.id}>
@@ -163,9 +163,9 @@ const LayoutSerie = () => {
                 onClick={aoAlternarAcompanhamento}
               >
                 {acompanhando ? (
-                  <BookmarkCheck size={16} />
+                  <LuBookmarkCheck size={16} />
                 ) : (
-                  <BookmarkPlus size={16} />
+                  <LuBookmarkPlus size={16} />
                 )}
                 {acompanhando ? "Acompanhando" : "Acompanhar série"}
               </button>
