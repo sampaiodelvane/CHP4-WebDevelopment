@@ -1,3 +1,9 @@
+Integrantes:
+RM: 571825 Delvane Sousa Sampaio Oliveira
+RM: 571631 Murilo Camillo da Silva
+
+Link na Vercel: https://novotvtimechp4webdev.vercel.app/
+
 Recriação do Próximo TV Time
 
 Configure as variáveis de ambiente:
